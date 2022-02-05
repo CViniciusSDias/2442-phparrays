@@ -13,13 +13,8 @@ $novosAlunos = [
     'Nico',
     'Kilderson',
     'Daiane',
-    'Quinto nome',
-    'Patricia',
-    'Nico',
-    'Kilderson',
-    'Daiane',
 ];
 
-$alunos2022 = array_merge($alunos2021, $novosAlunos);
+$alunos2022 = [...$alunos2021, 'Carlos Vinicius', ...$novosAlunos];
 
 var_dump($alunos2022);
