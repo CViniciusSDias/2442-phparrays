@@ -1,7 +1,7 @@
 <?php
 
 $notas = [
-    'Vinicius' => 6,
+    'Vinicius' => null,
     'João' => 8,
     'Ana' => 10,
     'Roberto' => 7,
@@ -16,3 +16,6 @@ if (is_array($notas)) {
 }
 
 var_dump(array_is_list($notas));
+
+echo 'Ana fez a prova:' . PHP_EOL;
+var_dump(isset($notas['Ana']));
