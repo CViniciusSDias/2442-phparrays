@@ -1,11 +1,13 @@
 <?php
 
 $array = [
-    0 => 'um',
-    1 => 'dois',
-    2 => 'tres'
+    1 => 'um',
+    2 => 'dois',
+    3 => 'tres'
 ];
 
-// 1 -> 'um'
+foreach ($array as $numeral => $nomeNumero) {
+    echo "$numeral em português é: $nomeNumero" . PHP_EOL;
+}
 
-var_dump($array);
+echo "Total: " . count($array) . PHP_EOL;
